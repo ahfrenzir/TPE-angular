@@ -1,0 +1,30 @@
+
+<h1 class="lead  display-6 text-primary">Peliculas</h1>
+<div class="container row row-cols-1 row-cols-md-2 g-4">
+
+    <div class="card" style="width: 18rem;" *ngFor="let card of cards">
+        <div *ngIf="card.disliked ==false">
+
+            <img [src]="card.img" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{card.name}}</h5>
+              <p class="card-text">{{card.desc}}</p>
+              
+              <app-buttons [card] ='card'></app-buttons>
+    
+            </div>
+        </div>
+        <div *ngIf="card.disliked == true">
+
+            <img [src]="card.img" class="card-img-top" alt="...">
+            <div class="card-body bg-danger text-white">
+              <h5 class="card-title">{{card.name}}</h5>
+              <p class="card-text">{{card.desc}}</p>
+              
+              <app-buttons [card] ='card'></app-buttons>
+    
+            </div>
+        </div>
+    </div>
+    
+</div>

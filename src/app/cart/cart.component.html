@@ -1,0 +1,11 @@
+<h1 class="lead text-start display-6 text-primary">Mis favoritos</h1>
+<div class="container  row row-cols-1 row-cols-md-2 g-4">
+        <div class="card " style="width: 18rem;" *ngFor="let card of likedList$ | async">
+            <img [src]="card.img" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{card.name}}</h5>
+              <p class="card-text">{{card.desc}}</p>
+              <button href="#"  class="btn btn-danger" (click)="removeFromLiked(card)">Quitar de favoritos</button>
+            </div>
+        </div>
+</div>

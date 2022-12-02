@@ -1,0 +1,7 @@
+button{
+    margin: 0.2rem;
+}
+.btn-container{
+    justify-content: center;
+    align-items: center;
+}

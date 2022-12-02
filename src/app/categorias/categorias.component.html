@@ -1,0 +1,11 @@
+<h1 class="lead  display-6 text-primary">Categorias</h1>
+<div class="container">
+
+    <div class="card" style="width: 18rem;" *ngFor="let categoria of categorias">
+        <img [src]="categoria.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{categoria.name}}</h5>
+        </div>
+    </div>
+    
+</div>

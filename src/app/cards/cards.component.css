@@ -1,0 +1,14 @@
+.card{
+    margin: 1rem;
+    padding: 0;
+    border: none;
+}
+.container{
+    display: flex;
+    margin: 0;
+}
+
+h1{
+    margin: 1.5rem;
+}
+
